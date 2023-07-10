@@ -65,7 +65,8 @@ body *{
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
-  right: 50;
+  left: 50;
+  animation: slide-out 0.2s;
 }
 #switch span{
   display: block;
@@ -76,8 +77,11 @@ body *{
   border-radius: 9999px;
   background: var(--f-cor)
 }
+#switch button:hover{
+  outline: 8px solid var(--h-b-cor);
+}
 .light #switch button{
-  right: 0;
+  animation: slide 0.2s forwards;
 }
 #links{
   text-align: center;
@@ -137,5 +141,21 @@ footer{
   }
   .light{
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+@keyframes slide {
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes slide-out{
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
   }
 }

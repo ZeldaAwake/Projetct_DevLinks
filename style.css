@@ -112,7 +112,7 @@ ul{
 }
 #s-links{
   display: flex;
-  gap: 16px;
+  gap: 2px;
   justify-content: center;
   align-items: center;
   padding: 24px 0px;
@@ -124,7 +124,7 @@ ul{
   justify-content: center;
   padding: 16px 16px;
   transition: 200ms;
-  border-radius: 56px;
+  border-radius: 50%;
 }
 #s-links a:hover{
   display: flex;
